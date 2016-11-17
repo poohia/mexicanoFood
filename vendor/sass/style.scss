@@ -1,0 +1,576 @@
+@font-face
+{
+    font-family: "Gotham Eclosion";
+    src: url('/fonts/GothamRnd-Medium.otf');
+}
+@font-face
+{
+    font-family: "Gotham Eclosion";
+    font-style: bold;
+    src: url('/fonts/GothamRnd-Medium.otf');
+}
+@font-face
+{
+    font-family: "Blanche Eclosion";
+    src: url('/fonts/BLANCH_CAPS.otf');
+}
+@font-face
+{
+    font-family: "Blanche Eclosion";
+    font-style: bold;
+    src: url('/fonts/BLANCH_CAPS.otf');
+}
+body{
+    font-family: "Gotham Eclosion";
+    width: 100%;
+    background-color: white;
+    color: black;
+    h1
+    {
+        color: #208d92;
+        font-family: "Blanche Eclosion";
+        font-size: 80px;
+    }
+    p
+    {
+        font-family: "Gotham Eclosion";
+        color: #303030;
+        //font-size: 24px;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 730px;
+    }
+    
+    nav
+    {
+        width: 100%;
+        
+        .container-nav
+        {
+            
+        @media (min-width: 768px)
+        {
+           // margin-top: 30px;
+            .brand
+            {
+                margin-bottom: 20px;
+                
+            }
+
+            li
+            {
+                display: inline;
+            }
+        }
+        .brand
+        {
+            text-align: center;
+            a 
+            {
+                color: black;
+                font-size: 50px;
+                font-family: "Blanche Eclosion";
+                font-weight: bold;
+            }
+            img
+            {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        ul
+        {
+            text-align: center;
+            list-style:none;
+            position: relative;
+            top: 30px;
+
+        }
+        a
+        {
+             color: white;
+            
+             text-decoration: none;
+             font-size: 20px;
+        }
+        a.active 
+        {
+            color: white;
+        }
+        a:hover
+        {
+            text-decoration: none;
+            color: white;
+        }
+            li
+            {
+               // cursor: pointer;
+                padding: 26px;
+            }
+        }
+        
+        // mobile
+        @media (max-width: 768px)
+        {
+            .container-nav
+            {
+
+            }
+            
+        }
+    }
+    footer
+    {
+        background-color: #303030;
+        text-align: center;
+        color: #208d92;
+        img
+        {
+            margin-top: 15px;
+            margin-left: 35px;
+            cursor: pointer;
+
+        }
+        ul
+        {
+            margin-top: 30px;
+        }
+        ul li
+        {
+            display: inline;
+            list-style: none;
+            margin-right: 100px;
+            
+            //font-size: 30px;
+            a
+            {
+                color: #208d92;
+                
+            }
+            a:hover
+            {
+                color: #208d92;
+                text-decoration: none;
+            }
+        }
+        .button-follow
+        {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            div:first-child
+            {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    
+}
+.game-rules
+{
+    margin-top: 30px;
+    min-height : 200px;
+    
+    height: 100%;
+    text-align: center;
+    padding: 15px;
+    p.title
+    {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .CTA
+    {
+        background-color: #208d92;
+        color: white;
+    }
+    .CTA:hover
+    {
+        background-color: #208d92 !important;
+        color: white;
+    }
+}
+.game-galery
+{
+    margin-top: 30px;
+    min-height: 500px;
+    margin-bottom: 500px;
+    
+    .header
+    {
+        .line
+        {
+            border-top: 1px solid #bebebe;    
+            margin-top: 9px;
+        }
+        .title
+        {
+            text-align: center;
+        }
+    }
+    .gallery-container
+    {
+        margin-top: 20px;
+        .row
+        {
+            margin-bottom: 20px;
+        }
+        img.big-img
+        {
+                width: 302px;
+                height: 302px;
+        }
+        img.little-img
+        {
+            width: 150px;
+            height: 150px;
+            &:first-child
+            {
+                margin-bottom: 62px;
+            }
+        }
+    }
+}
+.btn-default.CTA
+{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &:hover
+    {
+        background-color: #fff;
+    }
+}
+.text-center
+{
+    text-align: center;
+}
+.first-img
+{
+    background-image: url("/images/gabari.jpg");
+    background-position: center; 
+    width: 100%;
+    height: 350px;
+        background-position: left top;
+}
+.img-home 
+{
+    height: 500px;
+    background-image: url("/images/hp.jpg");
+}
+.selection-cheef
+{
+    text-align: center;
+    margin-bottom: 30px;
+    h3
+    {
+        color: #208d92;
+        margin-bottom: 20px;
+    }
+
+    .pictures-cheef
+    {
+        margin-top: 20px;
+        img
+        {
+             width: 200px;
+             height: 267px;
+        }
+    }
+    .cheef-info
+    {
+        color: #fbaf41;
+        background-color: rgba(0,0,0,0.6);
+        width: 200px;
+        position: relative;
+        bottom: 40px;
+        left: 25px;
+        font-size: bold;
+        p
+        {
+            color: #fbaf41;
+        }
+    }
+    .citation-cheef
+    {
+        margin-top: -30px;
+        .fa-quote-left, .fa-quote-right
+        {
+            color: #fbaf41;
+            font-size: 20px;
+        }
+    }
+
+}
+.home-jeu-concour
+{
+    width: 100%;
+    height: 400px;
+    background-color: #21afb6;
+    text-align: center;
+    padding: 103px;
+    position: relative;
+    //z-index: -2;
+    h3
+    {
+        color: white;
+    }
+    p
+    {
+        font-size: 20px;
+    }
+    .background-jeu-concour
+    {
+        position: absolute;
+       // background-image: url("/images/image-background-jeu.png");
+       // background-repeat: repeat-x;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 400px;
+        z-index: -1;
+    }
+}
+.home-blog
+{
+    margin-top: 30px;
+    h3
+    {
+        color: #208d92;
+        margin-bottom: 35px;
+    }
+    .blog-preview
+    {
+        
+        position: relative;
+        margin-bottom: 50px;
+        .blog-img
+        {
+            img
+            {
+                cursor: pointer;
+                width: 86%;
+                
+            }
+        }
+        .blog-preview-info
+        {
+            cursor: pointer;
+            width: 261px;
+            position: absolute;
+            
+            
+            padding: 9px;
+            
+            > .title
+            {
+                font-weight: bold;
+            }
+        }
+        .agenda
+            {
+                background-color: #fbaf41;
+                top: -48px;
+                right: 122px;
+            }
+        .personalite
+            {
+                background-color: #1eb2b9;
+                bottom:  -30px;
+                left : -30px;
+
+            }
+        .savoir
+        {
+            background-color: #df844d;
+            bottom: -49px;
+            right: 146px;
+        }
+    }
+}
+.partenaire
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    h3
+    {
+        margin-bottom: 35px;
+        color: #208d92;
+    }
+    .home-partenaire-logo
+    {
+        width: 20%;
+        float: left;
+    }
+}
+.home-recette
+{
+    text-align: center;
+    margin-bottom: 30px;
+        h3
+    {
+        margin-bottom: 35px;
+        color: #208d92;
+    }
+    img
+    {
+        width: 102%;
+    }
+    .home-recette-description
+    {
+        background-color: #303030;
+        height: 590px;
+        padding: 80px;
+        text-align: left;
+        color: white;
+        p 
+        {
+            color : white;
+        }
+        .title1
+        {
+            font-weight: bold;
+            color: #df844d;
+            font-size: 30px;
+            &:after{
+              content: " ";
+              border-bottom-style: solid;
+              border-bottom-width:5px;
+              display:table-cell;
+              width:100px;
+              color: #df844d;
+            }
+        }
+        .title2
+        {
+            font-weight: bold;
+            color: #df844d;
+            font-size: 20px;
+            &:after{
+              content: " ";
+              border-bottom-style: solid;
+              border-bottom-width:5px;
+              display:table-cell;
+              width:100px;
+              color: #df844d;
+            }
+        }
+        .CTA
+        {
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 22px;
+            background-color: #1eb2b9;
+            border-color: #1eb2b9;
+            color: white;
+        }
+    }
+}
+.home-communaute
+{
+    text-align: center;
+    margin-bottom: 70px;
+     h3
+    {
+        margin-bottom: 35px;
+        color: #208d92;
+    }
+    .pictures
+    {
+        width: 100%;
+        div
+        {
+            width: 25%;
+            float: left;
+            img
+            {
+                width: 80%;
+            }
+        }
+    }
+    .avatar
+    {
+        width: 100%;
+        text-align: left;
+
+        div
+        {
+            width: 25%;
+            float: left;
+            img
+            {
+                position:relative;
+                left: 30px;
+                top: 30px;
+            }
+        }
+    }
+    
+}
+.add-picture
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    h3
+    {
+        
+        color: #208d92;
+    }
+    .CTA
+    {
+        width: 100%;
+        background-color: #2e82f5;
+        color:white;
+        border-color: #2e82f5;
+        padding: 10px;
+        margin-top: 0;
+    }
+    .CTA:hover
+    {
+   background-color: #2e82f5;
+        color:white;
+        border-color: #2e82f5;
+    }
+    .line
+        {
+            border-top: 1px solid #bebebe;    
+            margin-top: 9px;
+        }
+    img
+    {
+        width: 100%
+    }
+    form
+    {
+        text-align: left;
+    }
+}
+.restaurants
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    img
+    {
+        width: 400px;
+    }
+    .list-restaurant
+    {
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+    .row
+    {
+        margin-bottom: 4px;
+        span
+        {
+           // color: white;
+        }
+    }
+}

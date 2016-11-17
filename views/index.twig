@@ -1,0 +1,134 @@
+{% extends "base/base.twig" %}
+
+{% block body %}
+
+
+{#{% if flashMessage|length > 0 %}<div class="notification"> {% for message in flashMessage %} <p> {{message}}  </p> {% endfor %} </div>{% endif %}#}
+
+
+<div class="row selection-cheef" >
+	<div class="col-xs-12">
+		<h1>NOTRE SELECTION DE CHEFS</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br /> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br />ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+	</div>
+	<div class="col-xs-12 pictures-cheef">
+		<div class="col-xs-2 col-xs-offset-3">
+			<img src="/images/sebastian_martinez.jpg" alt="Sebastian Martinez" />
+			<div class="cheef-info"><p > {{ "Sebastian Martinez"|upper }} <br />{{"le traditionnel"|upper }}</p></div>
+		</div>
+		<div class="col-xs-2 ">
+			<img src="/images/liz_olivo.jpg" alt="Liz Olivo" />
+			<div class="cheef-info"><p > {{ "Liz Olivo"|upper }} <br />{{"la mixologue"|upper }}</p></div>
+		</div>
+		<div class="col-xs-2 ">
+			<img src="/images/abraham_de_la_rosa.jpg" alt="Abraham de la Rosa" />
+			<div class="cheef-info"><p > {{ "Abraham de la Rosa"|upper }} <br />{{"l artiste fashion"|upper }}</p></div>
+		</div>
+	</div>
+	<div class="col-xs-12 citation-cheef">
+	    <div class="col-xs-2 col-xs-offset-3">
+			<p><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet,<br /> consectetur adipisicing elit,<br /> sed do eiusmod tempor <br />incididunt ut labore <br />
+			et dolore magna aliqua. Ut <br /> enim ad <i class="fa fa-quote-right" aria-hidden="true"></i> </p>
+		</div>
+		<div class="col-xs-2 ">
+			<p><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet,<br /> consectetur adipisicing elit,<br /> sed do eiusmod tempor <br />incididunt ut labore <br />
+			et dolore magna aliqua. Ut <br /> enim ad <i class="fa fa-quote-right" aria-hidden="true"></i> </p>
+		</div>
+		<div class="col-xs-2 ">
+			<p><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet,<br /> consectetur adipisicing elit,<br /> sed do eiusmod tempor <br />incididunt ut labore <br />
+			et dolore magna aliqua. Ut <br /> enim ad <i class="fa fa-quote-right" aria-hidden="true"></i> </p>
+		</div>
+	</div>
+
+</div>
+<div class="row home-jeu-concour">
+	<h3>{{"participez au jeu concours GAGNEZ UN VOYAGE AU mEXIQUE"|upper }}</h3>
+	<p class="jeu-concour-info">Participer à notre concours photo pour tenter de gagner <br />
+un voyage culinaire au mexique en compagnie de nos Chef ! <br />
+
+Il vous ferons découvrir toutes les saveurs du pays.</p>
+	<a href="/jeu-concour" class="btn btn-default CTA">PARTICIPER</a>
+	<div class="background-jeu-concour">&nbsp;</div>
+</div>
+<div class="row">
+  <div class="col-md-offset-2 home-blog">
+	<h1>NOTRE BLOG</h1>
+	<div class="row blog-preview">
+		<div class="blog-img"><img src="/images/blog1.png" alt="concert à Mexico "/></div>
+			<div class="row blog-preview-info agenda">
+		<p class="title">{{"agenda culturel"|upper}}</p>
+		<p>Lorem ipsum dolor sit amet,<br/> consectetur adipisicing elit, sed<br/> do eiusmod tempor incididunt<br/> ut labore et dolore magna <br/>aliqua. Ut enim ad minim<br/> veniam, quis nostrud<br/> exercitation ullamco laboris nisi<br/> ut aliquip ex ea commodo<br/> consequat. Duis aute irure dolor <br/></p>
+	</div>
+	</div>
+	<div class="row blog-preview">
+		<div class="blog-img"><img src="/images/blog2.png" alt="frida kahlo"/></div>
+			<div class="row blog-preview-info personalite">
+		<p class="title">{{"Un jour, une personnalité"|upper}}</p>
+		<p>Lorem ipsum dolor sit amet,<br/> consectetur adipisicing elit, sed<br/> do eiusmod tempor incididunt<br/> ut labore et dolore magna <br/>aliqua. Ut enim ad minim<br/> veniam, quis nostrud<br/> exercitation ullamco laboris nisi<br/> ut aliquip ex ea commodo<br/> consequat. Duis aute irure dolor <br/></p>
+	</div>
+	</div>
+	<div class="row blog-preview">
+		<div class="blog-img"><img src="/images/blog3.png" alt="savoir faire et tradition mexicaine " /></div>
+			<div class="row blog-preview-info savoir">
+		<p class="title">{{"savoir et traditions"|upper}}</p>
+		<p>Lorem ipsum dolor sit amet,<br/> consectetur adipisicing elit, sed<br/> do eiusmod tempor incididunt<br/> ut labore et dolore magna <br/>aliqua. Ut enim ad minim<br/> veniam, quis nostrud<br/> exercitation ullamco laboris nisi<br/> ut aliquip ex ea commodo<br/> consequat. Duis aute irure dolor <br/></p>
+	</div>
+	</div>
+
+  </div>
+</div>
+
+<div class="row partenaire">
+	<h1>NOS PARTENAIRES</h1>
+	<div class="row">
+		<div class="home-partenaire-logo"><img  style="width: 240px" src="/images/partenaire1.png" alt="Partenaire : Urban art" /></div>
+		<div class="home-partenaire-logo"><img src="/images/partenaire2.png" alt="Partenaire :  Old En Paso" /></div>
+		<div class="home-partenaire-logo"><img  style = "    position: relative;  top: 58px;" src="/images/partenaire3.png" alt="Partenaire : Top chef"/></div>
+		<div class="home-partenaire-logo"><img src="/images/partenaire4.png" alt="Partenaire : Aero Mexico "/></div>
+		<div class="home-partenaire-logo"><img src="/images/partenaire5.png" alt="Partenaire : Historico Central"/></div>
+	</div>
+	
+</div>
+<div class="row home-recette">
+	<h1>NOS RECETTES</h1>
+	<div class="col-md-6">
+		<img src="/images/recette-home.png" />
+	</div>
+	<div class="col-md-6 home-recette-description">
+		<p class="title1">{{"chili con carne"|upper}}</p>
+		<p>Retrouvez touDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<br /><br />
+		<p class="title2">{{"Ingrédients"|upper}}</p>
+		<p>- Lorem ipsum dolor sit amet<br/>
+- Consectetur adipisicing elit, sed<br/>
+- Do eiusmod tempor incididunt ut labore<br/> 
+- Et dolore magna aliqua. Ut enim<br/>
+- Ad minim veniam, quis nostrud<br/>
+- Exercitation ullamco laboris nisi</p>
+<a href="/jeu-concour" class="btn btn-default CTA">{{"acheter nos ingrédients"|upper}}</a>
+	</div>
+</div>
+
+<div class="row">
+<div class=" home-communaute">
+	<h1>{{"Notre communauté"|upper}}	</h1>
+	<div class="row avatar">
+	    <div class=""><img src="/images/communauteAvatar1.png" /></div>
+		<div class=""><img src="/images/communauteAvatar2.png" /></div>
+		<div class=""><img src="/images/communauteAvatar3.png" /></div>
+		<div class=""><img src="/images/communauteAvatar4.png" /></div>
+	</div>
+	<div class="row pictures">
+		<div class=""><img src="/images/communaute1.png" /></div>
+		<div class=""><img src="/images/communaute2.png" /></div>
+		<div class=""><img src="/images/communaute3.png" /></div>
+		<div class=""><img src="/images/communaute4.png" /></div>
+	</div>
+</div>
+</div>
+{% endblock body %}
+
+{% block javascript %}
+    {{ parent() }}
+   
+{% endblock javascript %}

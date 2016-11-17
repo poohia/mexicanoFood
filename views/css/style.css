@@ -1,0 +1,343 @@
+@font-face {
+  font-family: "Gotham Eclosion";
+  src: url("/fonts/GothamRnd-Medium.otf"); }
+@font-face {
+  font-family: "Gotham Eclosion";
+  font-style: bold;
+  src: url("/fonts/GothamRnd-Medium.otf"); }
+@font-face {
+  font-family: "Blanche Eclosion";
+  src: url("/fonts/BLANCH_CAPS.otf"); }
+@font-face {
+  font-family: "Blanche Eclosion";
+  font-style: bold;
+  src: url("/fonts/BLANCH_CAPS.otf"); }
+body {
+  font-family: "Gotham Eclosion";
+  width: 100%;
+  background-color: white;
+  color: black; }
+  body h1 {
+    color: #208d92;
+    font-family: "Blanche Eclosion";
+    font-size: 80px; }
+  body p {
+    font-family: "Gotham Eclosion";
+    color: #303030; }
+  body .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 730px; }
+  body nav {
+    width: 100%; }
+    @media (min-width: 768px) {
+      body nav .container-nav .brand {
+        margin-bottom: 20px; }
+      body nav .container-nav li {
+        display: inline; } }
+    body nav .container-nav .brand {
+      text-align: center; }
+      body nav .container-nav .brand a {
+        color: black;
+        font-size: 50px;
+        font-family: "Blanche Eclosion";
+        font-weight: bold; }
+      body nav .container-nav .brand img {
+        width: 300px;
+        height: 300px; }
+    body nav .container-nav ul {
+      text-align: center;
+      list-style: none;
+      position: relative;
+      top: 30px; }
+    body nav .container-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px; }
+    body nav .container-nav a.active {
+      color: white; }
+    body nav .container-nav a:hover {
+      text-decoration: none;
+      color: white; }
+    body nav .container-nav li {
+      padding: 26px; }
+  body footer {
+    background-color: #303030;
+    text-align: center;
+    color: #208d92; }
+    body footer img {
+      margin-top: 15px;
+      margin-left: 35px;
+      cursor: pointer; }
+    body footer ul {
+      margin-top: 30px; }
+    body footer ul li {
+      display: inline;
+      list-style: none;
+      margin-right: 100px; }
+      body footer ul li a {
+        color: #208d92; }
+      body footer ul li a:hover {
+        color: #208d92;
+        text-decoration: none; }
+    body footer .button-follow {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      body footer .button-follow div:first-child {
+        margin-left: 5px; }
+
+.game-rules {
+  margin-top: 30px;
+  min-height: 200px;
+  height: 100%;
+  text-align: center;
+  padding: 15px; }
+  .game-rules p.title {
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .game-rules .CTA {
+    background-color: #208d92;
+    color: white; }
+  .game-rules .CTA:hover {
+    background-color: #208d92 !important;
+    color: white; }
+
+.game-galery {
+  margin-top: 30px;
+  min-height: 500px;
+  margin-bottom: 500px; }
+  .game-galery .header .line {
+    border-top: 1px solid #bebebe;
+    margin-top: 9px; }
+  .game-galery .header .title {
+    text-align: center; }
+  .game-galery .gallery-container {
+    margin-top: 20px; }
+    .game-galery .gallery-container .row {
+      margin-bottom: 20px; }
+    .game-galery .gallery-container img.big-img {
+      width: 302px;
+      height: 302px; }
+    .game-galery .gallery-container img.little-img {
+      width: 150px;
+      height: 150px; }
+      .game-galery .gallery-container img.little-img:first-child {
+        margin-bottom: 62px; }
+
+.btn-default.CTA {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .btn-default.CTA:hover {
+    background-color: #fff; }
+
+.text-center {
+  text-align: center; }
+
+.first-img {
+  background-image: url("/images/gabari.jpg");
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  background-position: left top; }
+
+.img-home {
+  height: 500px;
+  background-image: url("/images/hp.jpg"); }
+
+.selection-cheef {
+  text-align: center;
+  margin-bottom: 30px; }
+  .selection-cheef h3 {
+    color: #208d92;
+    margin-bottom: 20px; }
+  .selection-cheef .pictures-cheef {
+    margin-top: 20px; }
+    .selection-cheef .pictures-cheef img {
+      width: 200px;
+      height: 267px; }
+  .selection-cheef .cheef-info {
+    color: #fbaf41;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 200px;
+    position: relative;
+    bottom: 40px;
+    left: 25px;
+    font-size: bold; }
+    .selection-cheef .cheef-info p {
+      color: #fbaf41; }
+  .selection-cheef .citation-cheef {
+    margin-top: -30px; }
+    .selection-cheef .citation-cheef .fa-quote-left, .selection-cheef .citation-cheef .fa-quote-right {
+      color: #fbaf41;
+      font-size: 20px; }
+
+.home-jeu-concour {
+  width: 100%;
+  height: 400px;
+  background-color: #21afb6;
+  text-align: center;
+  padding: 103px;
+  position: relative; }
+  .home-jeu-concour h3 {
+    color: white; }
+  .home-jeu-concour p {
+    font-size: 20px; }
+  .home-jeu-concour .background-jeu-concour {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    z-index: -1; }
+
+.home-blog {
+  margin-top: 30px; }
+  .home-blog h3 {
+    color: #208d92;
+    margin-bottom: 35px; }
+  .home-blog .blog-preview {
+    position: relative;
+    margin-bottom: 50px; }
+    .home-blog .blog-preview .blog-img img {
+      cursor: pointer;
+      width: 86%; }
+    .home-blog .blog-preview .blog-preview-info {
+      cursor: pointer;
+      width: 261px;
+      position: absolute;
+      padding: 9px; }
+      .home-blog .blog-preview .blog-preview-info > .title {
+        font-weight: bold; }
+    .home-blog .blog-preview .agenda {
+      background-color: #fbaf41;
+      top: -48px;
+      right: 122px; }
+    .home-blog .blog-preview .personalite {
+      background-color: #1eb2b9;
+      bottom: -30px;
+      left: -30px; }
+    .home-blog .blog-preview .savoir {
+      background-color: #df844d;
+      bottom: -49px;
+      right: 146px; }
+
+.partenaire {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .partenaire h3 {
+    margin-bottom: 35px;
+    color: #208d92; }
+  .partenaire .home-partenaire-logo {
+    width: 20%;
+    float: left; }
+
+.home-recette {
+  text-align: center;
+  margin-bottom: 30px; }
+  .home-recette h3 {
+    margin-bottom: 35px;
+    color: #208d92; }
+  .home-recette img {
+    width: 102%; }
+  .home-recette .home-recette-description {
+    background-color: #303030;
+    height: 590px;
+    padding: 80px;
+    text-align: left;
+    color: white; }
+    .home-recette .home-recette-description p {
+      color: white; }
+    .home-recette .home-recette-description .title1 {
+      font-weight: bold;
+      color: #df844d;
+      font-size: 30px; }
+      .home-recette .home-recette-description .title1:after {
+        content: " ";
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+        display: table-cell;
+        width: 100px;
+        color: #df844d; }
+    .home-recette .home-recette-description .title2 {
+      font-weight: bold;
+      color: #df844d;
+      font-size: 20px; }
+      .home-recette .home-recette-description .title2:after {
+        content: " ";
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+        display: table-cell;
+        width: 100px;
+        color: #df844d; }
+    .home-recette .home-recette-description .CTA {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-size: 22px;
+      background-color: #1eb2b9;
+      border-color: #1eb2b9;
+      color: white; }
+
+.home-communaute {
+  text-align: center;
+  margin-bottom: 70px; }
+  .home-communaute h3 {
+    margin-bottom: 35px;
+    color: #208d92; }
+  .home-communaute .pictures {
+    width: 100%; }
+    .home-communaute .pictures div {
+      width: 25%;
+      float: left; }
+      .home-communaute .pictures div img {
+        width: 80%; }
+  .home-communaute .avatar {
+    width: 100%;
+    text-align: left; }
+    .home-communaute .avatar div {
+      width: 25%;
+      float: left; }
+      .home-communaute .avatar div img {
+        position: relative;
+        left: 30px;
+        top: 30px; }
+
+.add-picture {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px; }
+  .add-picture h3 {
+    color: #208d92; }
+  .add-picture .CTA {
+    width: 100%;
+    background-color: #2e82f5;
+    color: white;
+    border-color: #2e82f5;
+    padding: 10px;
+    margin-top: 0; }
+  .add-picture .CTA:hover {
+    background-color: #2e82f5;
+    color: white;
+    border-color: #2e82f5; }
+  .add-picture .line {
+    border-top: 1px solid #bebebe;
+    margin-top: 9px; }
+  .add-picture img {
+    width: 100%; }
+  .add-picture form {
+    text-align: left; }
+
+.restaurants {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .restaurants img {
+    width: 400px; }
+  .restaurants .list-restaurant {
+    max-height: 500px;
+    overflow-y: scroll; }
+  .restaurants .row {
+    margin-bottom: 4px; }

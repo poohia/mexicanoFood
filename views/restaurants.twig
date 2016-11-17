@@ -1,0 +1,28 @@
+{% extends "base/base.twig" %}
+
+{% block body %}
+	<div class="row text-center">
+		<h1> LA SÉLECTION DES CHEFS</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br /> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br />ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+	</div>
+	<div class="restaurants ">
+
+<div class="col-md-6 col-md-offset-1 list-restaurant">
+	<div class="row"><div class="col-md-6"><img src="/images/restaurant1.png"/> <span>LE CANDELARIA PARIS ( 75003 )</span></div>
+	<div class="col-md-6"><img src="/images/restaurant2.png"/><span>EL NOPAL PARIS ( 75010 )</span></div></div>
+	<div class="row"><div class="col-md-6"><img src="/images/restaurant3.png"/><span>LUZ VERDE PARIS ( 75003 )</span></div>
+	<div class="col-md-6"><img src="/images/restaurant4.png"/></div><span>EL TACO DEL DIABLO PARIS ( 75010 )</span></div>
+	<div class="row"><div class="col-md-6"><img src="/images/restaurant5.png"/><span>SANTA ROSLIA</span></div>
+	<div class="col-md-6"><img src="/images/restaurant6.png"/><span>MEXICANO</span></div></div>
+
+</div>
+<div id="map" style="width:500px;height:500px"></div>
+</div>
+{% endblock body %}
+
+{% block javascript %}
+    {{ parent() }}
+  
+    <script src="/js/googleMap.js" type="text/javascript" ></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDq9Bk0CqZPloh77-fI70AmvQ137e6_LQ&callback=initMap" async defer></script>
+{% endblock javascript %}

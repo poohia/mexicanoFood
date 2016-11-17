@@ -1,0 +1,117 @@
+{% extends "base/base.twig" %}
+
+    {% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+
+    {% endblock stylesheets %}
+
+{% block body %}
+
+
+{#{% if flashMessage|length > 0 %}<div class="notification"> {% for message in flashMessage %} <p> {{message}}  </p> {% endfor %} </div>{% endif %}#}
+{% include "base/beimp.twig" %}
+<div class="row">
+    <div class="game-rules col-sm-12">
+  
+        <h1 >
+            DIRECTION {{ "MEXICO"|upper }} !
+        </h1>
+        <p>
+            Participez à notre concours photo pour tenter de gagner un voyage culinaire
+            au mexique en compagnie de nos Chef !</p>
+          <p>  Vous avez jusqu'au XX pour nous proposer votre plus belle photo nous montrant votre amour pour le Mexique ! <br />
+            les Chefs en séléctionneront 10 pour se livrer à une grande final.
+        </p>
+     <a href="/jeu-concour/new" class="btn btn-default CTA">POSTER UNE PHOTO</a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="game-galery col-sm-12">
+        <div class="header col-xs-12">
+            <div class="line col-md-5 hidden-sm hidden-xs"></div>
+            <div class="title col-sm-12 col-md-2">LA GALERIE PHOTO</div>
+            <div class="line col-md-5 hidden-sm hidden-xs"></div>
+        </div>
+        <div class="gallery-container col-xs-8 col-md-offset-3 " id="links">
+   {#         <div class="row">
+              <div class="col-md-5"><a href="/images/gallery/{{images[0]}}" title="{{images[0]}}">  <img class="big-img" alt="{{images[0]}}" src="/images/gallery/{{images[0]}}" /></a></div>
+             <div class="col-md-2"> 
+            <a href="/images/gallery/{{images[1]}}" title="{{images[1]}}">  <img class="little-img" alt="{{images[1]}}" src="/images/gallery/{{images[1]}}" /></a>
+             <img class="little-img" alt="{{images[2]}}" src="/images/gallery/{{images[2]}}" />
+             </div> 
+             <div class="col-md-5"> <img class="big-img" alt="{{ images[3] }}" src="/images/gallery/{{images[3]}}"></div>
+            </div>
+            <div class="row">
+                       <div class="col-md-2"> 
+             <img class="little-img" alt="{{images[4]}}" src="/images/gallery/{{images[4]}}" />
+             <img class="little-img" alt="{{images[5]}}" src="/images/gallery/{{images[5]}}" />
+             </div> 
+                           <div class="col-md-5">  <img class="big-img" alt="{{images[6]}}" src="/images/gallery/{{images[6]}}" /></div>
+                       <div class="col-md-2"> 
+             <img class="little-img" alt="{{images[7]}}" src="/images/gallery/{{images[7]}}" />
+             <img class="little-img" alt="{{images[8]}}" src="/images/gallery/{{images[8]}}" />
+             </div> 
+                                    <div class="col-md-2"> 
+             <img class="little-img" alt="{{images[9]}}" src="/images/gallery/{{images[9]}}" />
+             <img class="little-img" alt="{{images[10]}}" src="/images/gallery/{{images[10]}}" />
+             </div> 
+             </div>
+             <div class="row">
+                                                     <div class="col-md-2"> 
+             <img class="little-img" alt="{{images[11]}}" src="/images/gallery/{{images[11]}}" />
+             <img class="little-img" alt="{{images[12]}}" src="/images/gallery/{{images[12]}}" />
+             </div> 
+                                                 <div class="col-md-2"> 
+             <img class="little-img" alt="{{images[13]}}" src="/images/gallery/{{images[13]}}" />
+             <img class="little-img" alt="{{images[14]}}" src="/images/gallery/{{images[14]}}" />
+             </div> 
+              <div class="col-md-5">  <img class="big-img" alt="{{images[15]}}" src="/images/gallery/{{images[15]}}" /></div>
+                                                              <div class="col-md-2"> 
+             <img class="little-img" alt="{{images[16]}}" src="/images/gallery/{{images[16]}}" />
+             <img class="little-img" alt="{{images[17]}}" src="/images/gallery/{{images[17]}}" />
+             </div> #}
+             <div class="row" style="position: relative;">
+                 <div class="" style="position: absolute"><a href="/images/gallery/{{images[0]}}" title="{{images[0]}}">  <img class="big-img" alt="{{images[0]}}" src="/images/gallery/{{images[0]}}" /></a></div>
+                  
+                 <div style="position: absolute;left: 320px;">   <a href="/images/gallery/{{images[1]}}" title="{{images[1]}}">  <img class="little-img" alt="{{images[1]}}" src="/images/gallery/{{images[1]}}" /></a></div>
+                   <div style="position: absolute; left: 320px;top: 152px;"> <a href="/images/gallery/{{images[2]}}" title="{{images[2]}}"> <img class="little-img" alt="{{images[2]}}" src="/images/gallery/{{images[2]}}" /></a></div>
+                   <div style="    position: absolute;left: 486px;"> <a href="/images/gallery/{{images[3]}}" title="{{images[3]}}"><img class="big-img" alt="{{ images[3] }}" src="/images/gallery/{{images[3]}}"></a></div>
+                
+             </div>
+             <div class="row" style="position: relative; margin-top: 312px">
+                <div style="position: absolute;"><a href="/images/gallery/{{images[4]}}" title="{{images[4]}}"><img class="little-img" alt="{{images[4]}}" src="/images/gallery/{{images[4]}}" /></a></div>
+                <div style="position: absolute; top: 152px"><a href="/images/gallery/{{images[5]}}" title="{{images[5]}}"><img class="little-img" alt="{{images[5]}}" src="/images/gallery/{{images[5]}}" /></a></div>
+                <div style="position: absolute;left: 168px;"><a href="/images/gallery/{{images[6]}}" title="{{images[6]}}"><img class="big-img" alt="{{images[6]}}" src="/images/gallery/{{images[6]}}" /></a></div>
+                <div style="position: absolute;left: 488px"><a href="/images/gallery/{{images[7]}}" title="{{images[7]}}"><img class="little-img" alt="{{images[7]}}" src="/images/gallery/{{images[7]}}" /></a></div>
+                <div style="position: absolute;left: 488px; top: 152px"><a href="/images/gallery/{{images[8]}}" title="{{images[8]}}"><img class="little-img" alt="{{images[4]}}" src="/images/gallery/{{images[8]}}" /></a></div>
+                <div style="position: absolute;left:639px"><a href="/images/gallery/{{images[9]}}" title="{{images[9]}}"><img class="little-img" alt="{{images[9]}}" src="/images/gallery/{{images[9]}}" /></a></div>
+                <div style="position: absolute;left:639px; top: 152px"><a href="/images/gallery/{{images[10]}}" title="{{images[10]}}"><img class="little-img" alt="{{images[9]}}" src="/images/gallery/{{images[10]}}" /></a></div>
+             </div>
+             <div class="row" style="position: relative; margin-top: 312px">
+                <div style="position: absolute;"><a href="/images/gallery/{{images[11]}}" title="{{images[11]}}"><img class="little-img" alt="{{images[11]}}" src="/images/gallery/{{images[11]}}" /></a></div>
+                <div style="position: absolute; top: 152px"><a href="/images/gallery/{{images[12]}}" title="{{images[12]}}"><img class="little-img" alt="{{images[12]}}" src="/images/gallery/{{images[12]}}" /></a></div>
+                <div style="position: absolute; left: 152px"><a href="/images/gallery/{{images[13]}}" title="{{images[13]}}"><img class="little-img" alt="{{images[13]}}" src="/images/gallery/{{images[13]}}" /></a></div>
+                <div style="position: absolute;top: 152px; left: 152px"><a href="/images/gallery/{{images[14]}}" title="{{images[14]}}"><img class="little-img" alt="{{images[14]}}" src="/images/gallery/{{images[14]}}" /></a></div>
+                <div class="" style="position: absolute; left: 320px"><a href="/images/gallery/{{images[15]}}" title="{{images[15]}}">  <img class="big-img" alt="{{images[15]}}" src="/images/gallery/{{images[15]}}" /></a></div>
+                <div style="position: absolute;left: 639px"><a href="/images/gallery/{{images[16]}}" title="{{images[16]}}"><img class="little-img" alt="{{images[16]}}" src="/images/gallery/{{images[16]}}" /></a></div>
+                <div style="position: absolute;left: 639px; top: 152px"><a href="/images/gallery/{{images[17]}}" title="{{images[17]}}"><img class="little-img" alt="{{images[17]}}" src="/images/gallery/{{images[17]}}" /></a></div>
+             </div>
+
+
+
+        </div>
+        
+    </div>
+
+</div>
+
+{% endblock body %}
+
+{% block javascript %}
+    {{ parent() }}
+    <script src="/js/blueimp-gallery.min.js"></script>
+    <script src="/js/jeuConcour.module.js"></script>
+{% endblock javascript %}

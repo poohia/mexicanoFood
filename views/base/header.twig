@@ -1,0 +1,19 @@
+<nav class="first-img {% if tab is not defined %} img-home {% endif %}" >
+    <div class="container-nav">
+        <div>
+            <ul>
+                <li><a href="#">LE BLOG</a></li>
+                 <li><a href="/jeu-concour" {% if tab in "jeu" %} class="active" {% endif %}>NOTRE JEU CONCOURS</a></li>
+                 <li><a href="/restaurants" {% if tab in "restaurants" %} class="active" {% endif %}>LES RESTAURANT</a></li>
+                 <li><a href="#">LES RECETTES</a></li>
+                 <li><a href="#">{{ "L'éPICERIE FINE" |upper }}</a></li>
+                 <li><a href="#">LE COLLECTIF</a></li>
+            </ul>
+        </div>
+        <div class="brand">
+            <a href="/"><img src="/images/logo.png" /></a>
+        </div>
+        
+    </div>
+    
+</nav>
