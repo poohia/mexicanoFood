@@ -103,7 +103,8 @@ module.exports = function(partitionjs) {
             app.use(error());
         }
 
-        app.use(favicon(__dirname + "/../views/images/favicon.ico"))
+      app
+      .use(favicon(__dirname + "/../views/images/favicon.ico"))
 
 
         // middleware that parse cookie header and populate req.cookies

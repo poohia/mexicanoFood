@@ -6,7 +6,7 @@ function initMap() {
     var Paris5 = {lat : 48.857993 , lng: 2.381153};
     var Paris6 = {lat : 48.891305, lng: 2.352987};
 
-var myicon = "http://localhost:8080/images/marker.png";
+var myicon = "https://mexicanofood-jordanazoulay.c9users.io/images/marker.png";
         // Create a map object and specify the DOM element for display.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: Paris,
