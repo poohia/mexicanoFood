@@ -74,8 +74,8 @@ router.post("/logout", function(req, res, next) {
 
 
 router.get('/', pageController.index);
-router.get('/jeu-concour', pageController.jeuConcour);
-router.get('/jeu-concour/new', pageController.addPicture);
+router.get('/jeu-concours', pageController.jeuConcour);
+router.get('/jeu-concours/new', pageController.addPicture);
 router.get('/restaurants', pageController.restaurants);
 router.get('/tmp', pageController.tmp);
 
