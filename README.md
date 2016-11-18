@@ -7,9 +7,9 @@ Basé sur express js et partitionjs ( coder par AZOULAY JORDAN ) https://github.
 
 ## Installation
 
-$ npm install
-$ npm install -g gulp
-$ gulp 
+$ npm install <br>
+$ npm install -g gulp <br>
+$ gulp  <br>
 
 
 ## Start server
