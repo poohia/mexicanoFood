@@ -1,18 +1,25 @@
 function initMap() {
+  /*** OBJECT MARKERS LATITUDE/LONGITUDE *******/
     var Paris = {lat: 48.856754, lng: 2.351047};
     var Paris2  = {lat : 48.860198, lng : 2.318802};
     var Paris3 = {lat : 48.842162 , lng: 2.292766};
     var Paris4 = {lat : 48.830759, lng: 2.359204};
     var Paris5 = {lat : 48.857993 , lng: 2.381153};
     var Paris6 = {lat : 48.891305, lng: 2.352987};
+/**********************************************/
 
-var myicon = "https://mexicanofood-jordanazoulay.c9users.io/images/marker.png";
+
+var myicon = "https://mexicanofood-jordanazoulay.c9users.io/images/cuillere.png";
+
+/**** INIT MAP **************/
         // Create a map object and specify the DOM element for display.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: Paris,
           scrollwheel: false,
           zoom: 12
         });
+/**********************/   
+        /** MARKERS **/
         var markerParis = new google.maps.Marker({
     position: Paris,
     map: map,
@@ -49,7 +56,9 @@ var myicon = "https://mexicanofood-jordanazoulay.c9users.io/images/marker.png";
     title: 'Paris',
     icon : myicon
   });
+/*****************************/
 
+/*** ADD SCROLL EVENT *********/
    google.maps.event.addListener(map, 'mousedown', function(event){
     this.setOptions({scrollwheel:true});
   });
@@ -65,3 +74,4 @@ var myicon = "https://mexicanofood-jordanazoulay.c9users.io/images/marker.png";
   });
 
       }
+/****************************/

@@ -38,15 +38,16 @@ body {
       body nav .container-nav li {
         display: inline; } }
     body nav .container-nav .brand {
-      text-align: center; }
+      text-align: center;
+      margin-top: 45px; }
       body nav .container-nav .brand a {
         color: black;
         font-size: 50px;
         font-family: "Blanche Eclosion";
         font-weight: bold; }
       body nav .container-nav .brand img {
-        width: 300px;
-        height: 300px; }
+        width: 250px;
+        height: 240px; }
     body nav .container-nav ul {
       text-align: center;
       list-style: none;
