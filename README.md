@@ -2,7 +2,7 @@
 Add-On of Expressjs
 # mexicanoFood
 
-Basé sur express js et partitionjs ( coder par AZOULAY JORDAN ) https://github.com/poohia/partitionjs-framework
+Basé sur express js et partitionjs ( codé par AZOULAY JORDAN ) https://github.com/poohia/partitionjs-framework
 
 
 ## Installation
